@@ -1,8 +1,0 @@
-license.md
-pyproject.toml
-readme.md
-tokens_retriever.egg-info/PKG-INFO
-tokens_retriever.egg-info/SOURCES.txt
-tokens_retriever.egg-info/dependency_links.txt
-tokens_retriever.egg-info/requires.txt
-tokens_retriever.egg-info/top_level.txt
