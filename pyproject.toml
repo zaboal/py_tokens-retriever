@@ -17,7 +17,7 @@ classifiers = [
     "Typing :: Typed",
     "Topic :: Software Development"]
 dependencies = [
-  "sys_environ"]
+  "os_environ"]
 
 [project.urls]
 homepage = "https://zaboal.name/tokens"
