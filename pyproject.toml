@@ -1,0 +1,24 @@
+[project]
+name = "tokens-retriever"
+description = "Retrieve API authorization tokens from the environment by it`s names."
+version = "0.0.0"
+readme = { file = "readme.md", content-type = "text/markdown" }
+license = { file = "license.md" }
+authors = [{name = "Zazhigin Bogdan Alekseevich", email = "za.boal@vk.com"}]
+keywords = ["api", "token", "retrieve"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: Russian",
+    "Programming Language :: Python",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+    "Topic :: Software Development"]
+dependencies = [
+  "sys_environ"]
+
+[project.urls]
+homepage = "https://zaboal.name/tokens"
+repository = "https://github.com/zaboal/tokens.git"

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tokens-retriever
+Version: 0.0.0
+Summary: Retrieve API authorization tokens from the environment by it`s names.
+Author-email: Zazhigin Bogdan Alekseevich <za.boal@vk.com>
+Project-URL: homepage, https://zaboal.name/tokens
+Project-URL: repository, https://github.com/zaboal/tokens.git
+Keywords: api,token,retrieve
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+This package contains only a class with only one `__init__` which retrieves the requested environment variables.
+
+```python
+from tokens import Tokens  # as it all the that the package provides
+```
+
+For instance, we've to get some authorization tokens that already defined in the environment to interact with the Discord API and the Telegram API.
+
+```python
+tokens = Tokens(["discord", "telegram"])
+```
+
+The class "`Tokens`" on initialization will retrieve as attributes these tokens from the environment as "`PACKAGE_DISCORD_TOKEN`" and "`PACKAGE_TELEGRAM_TOKEN`" or just "`DISCORD_TOKEN`" and "`TELEGRAM_TOKEN`" if the `__name__` is undefined.
+
+```python
+bot.run(tokens.discord)
+```
+
+The attribute "`discord`" should contain a string of the token if it has been in the environment, as the same as for "`telegram`".
